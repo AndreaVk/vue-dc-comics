@@ -1,24 +1,32 @@
 <template>
     <main>
+        <jumbo/>
         <div class="container">
-            <h1>-- Content goes here --</h1>
+            <cards/>
         </div>
-    </main>    
+    </main>
 </template>
 
 <script>
+import cards from '../components/sections/cards.vue';
+import jumbo from '../components/sections/jumbo.vue';
 export default {
+    name: 'Main',
+    components: {
+        cards,
+        jumbo,
+    }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '../assets/style/partials/variables.scss';
-    .container{
+    main{
         background-color: $darkGray;
         
     }
-    h1{
-        color: white;
-        padding: 50px;
-    }
+    // h1{
+    //     color: white;
+    //     padding: 50px 0;
+    // }
 </style>

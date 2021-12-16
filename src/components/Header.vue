@@ -85,11 +85,11 @@ export default {
     }
     .container {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
     }
     .logo {
-        padding: 0px 20% 0px 0;
+        padding: 0px 5% 0px 0;
     }
     .logo img{
         height: 70px;
